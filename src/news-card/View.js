@@ -9,7 +9,7 @@ function View(props) {
             <Image src={element.imgSrc}> </Image>
             <div className="newsDemonstrate">
                 <h1>{element.title}</h1>
-                <div className="author">by {element.author}</div>
+                <div className="author"> {element.author}</div>
                 <p>{element.description}</p>
             </div>
         </div>
