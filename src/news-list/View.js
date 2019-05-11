@@ -1,6 +1,7 @@
 import './style.scss'
 import React from 'react';
 import Newscard from '../news-card'
+import VideoSource from '../images/video.mp4'
 
 function View(props) {
     const posts = props.posts;
@@ -11,9 +12,15 @@ function View(props) {
     )
     );
     return (
-        <ul>
-            {listNews}
-        </ul>
+        <div>
+            <ul>
+                {listNews}
+            </ul>
+            <video className="app-video" controls>
+                <source src={VideoSource} type="video/mp4"/>
+                Your browser does not support the video.
+            </video>
+        </div>
     )
 }
 
