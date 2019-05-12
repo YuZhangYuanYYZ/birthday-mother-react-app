@@ -1,13 +1,16 @@
 import React from 'react';
 import './App.css';
 import NewsContainer from './NewsContainer';
+import FlexPratice from './flex-pratice';
+import FlexPratice1 from './flex-pratice1';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
       </header>
-      <NewsContainer />
+      <FlexPratice />
+      <FlexPratice1 />
 
     </div>
   );
